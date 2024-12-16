@@ -240,7 +240,7 @@ function App() {
 
   return (
     <div className='container'>
-      <h1>Welcome to NASA Bank!</h1>
+      <h1>Welcome to ASNA Bank!</h1>
       <h2>Please proceed with your account opening process</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-grid">

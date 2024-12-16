@@ -14,7 +14,7 @@ CORS(app, resources={r"/*": {"origins": "*"}})  # Allow requests from all origin
 db_config = {
     'host': 'localhost',
     'user': 'root',
-    'password': 'mysqlboot',  # Replace with your MySQL password
+    'password': 'pass@word1',  # Replace with your MySQL password
     'database': 'bank'  # Replace with your database name
 }
 
@@ -40,9 +40,7 @@ def validate_pan(pan):
 # Route to open an account
 @app.route('/open_account', methods=['POST'])
 def open_account():
-    print(request.method)  # Debug info
-    print(request.form)  # Debug info
-    print(request.files)  # Debug info
+
 
     data = request.form
     file = request.files.get('document')
