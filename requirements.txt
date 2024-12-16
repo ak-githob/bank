@@ -2,3 +2,5 @@ mysql-connector-python
 flask
 flask_cors
 mysql
+pytest
+flask-testing
